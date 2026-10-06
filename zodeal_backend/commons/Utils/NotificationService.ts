@@ -1,4 +1,4 @@
-import admin from "./Firebase";
+import admin from "./Firebase.js";
 
 // Define a custom notification type that includes the 'image' property
 interface CustomNotification extends admin.messaging.Notification {

@@ -11,6 +11,6 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
   },
-  "include": ["src", "ZoDeals.Server.ts", "commons/**/*"],
+  "include": ["src", "ZoDeals.Server.ts"],
   "exclude": ["node_modules", "dist"]
 }
