@@ -1,0 +1,136 @@
+/* ---------- General Body Styles ---------- */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+    width: 250px;
+    background: #102E50; /* Updated sidebar background color */
+    color: #fff;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.sidebar-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+/* ---------- Header ---------- */
+.header {
+    background: #98272B; /* Updated header background color */
+    color: #fff;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+}
+
+/* ---------- Menu Styles ---------- */
+.custom-menu {
+    background: #102E50; /* Match the sidebar background color */
+    border-right: none;
+}
+
+.custom-menu .ant-menu-item {
+    color: #fff;
+    background: transparent;
+    transition: background 0.5s;
+    font-weight: normal;
+}
+
+.custom-menu .ant-menu-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit;
+}
+
+.custom-menu .ant-menu-item:hover {
+    background: #B73E00;
+    color: #fff;
+}
+
+.custom-menu .ant-menu-item-selected {
+    background: #B73E00;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* Also apply to link inside selected menu item */
+.custom-menu .ant-menu-item-selected a {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* ---------- Sider Toggle ---------- */
+.ant-layout-sider-trigger {
+    background-color: #B73E00 !important;
+    border: none !important;
+}
+
+.ant-layout-sider-trigger:hover {
+    background-color: #ff704d !important;
+}
+
+.ant-layout-sider-trigger > .anticon {
+    color: white !important;
+}
+
+.ant-layout-sider-collapsed .ant-layout-sider-trigger {
+    border-radius: 50% !important;
+}
+
+.ant-layout-sider-collapsed .ant-layout-sider-trigger:hover {
+    background-color: #ff704d !important;
+}
+
+/* ---------- Content Area ---------- */
+.content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(167, 153, 153, 0.1);
+}
+
+.content h2 {
+    color: #333;
+}
+
+.content p {
+    color: #666;
+}
+
+/* ---------- Drawer (if used for mobile) ---------- */
+.ant-drawer-close {
+    color: white !important;
+}
+
+/* ---------- Responsive (Mobile View) ---------- */
+@media (max-width: 768px) {
+    .custom-menu .ant-menu-item a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar-title {
+        display: none;
+    }
+}

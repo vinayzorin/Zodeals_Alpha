@@ -1,0 +1,118 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #102E50;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 100px !important;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Menu Scroll */
+.menu-scroll-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+
+/* Header */
+.header {
+  background: #98272B;
+  color: #fff;
+  height: 64px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+/* Menu Styles */
+.custom-menu {
+  background: #102E50;
+  border-right: none;
+}
+
+.custom-menu .ant-menu-item {
+  color: #fff;
+  background: transparent;
+  transition: background 0.3s ease;
+  padding: 2px 20px !important; /* Reduce vertical padding */
+  line-height: 32px !important; /* Lower line height */
+  height: 42px !important;      /* Reduce height */
+  margin: 0 !important;  
+}
+
+.custom-menu .ant-menu-item-selected {
+  background: #B73E00 !important;
+  font-weight: bold;
+}
+
+.custom-menu .ant-menu-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.custom-menu .ant-menu-item a:visited,
+.custom-menu .ant-menu-item a:focus,
+.custom-menu .ant-menu-item a:active {
+  color: #fff !important;
+}
+
+.custom-menu .ant-menu-item-selected a {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+/* Sider Trigger */
+.ant-layout-sider-trigger {
+  background-color: #B73E00 !important;
+  border: none !important;
+}
+
+.ant-layout-sider-trigger:hover {
+  background-color: #ff704d !important;
+}
+
+.ant-layout-sider-trigger > .anticon {
+  color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-menu .ant-menu-item a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidebar-header {
+    justify-content: center;
+  }
+}
+
+/* Content Styling */
+.content {
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
